@@ -1,9 +1,10 @@
 <div *ngIf="articulos!=null; else espera">
   <table border="1">
     <tr>
-      <td>Codigo</td><td>Nombre</td><td>Sector</td><td>Nombre Rector</td><td>Teléfono</td><td>Correo Electrónico</td>
+      <td>No.</td><td>Codigo</td><td>Nombre</td><td>Sector</td><td>Nombre Rector</td><td>Teléfono</td><td>Correo Electrónico</td>
     </tr>
     <tr *ngFor="let art of articulos">
+      <td>{{art.no}}</td>
       <td>{{art.c_digo}}</td>
       <td>{{art.nombre}}</td>
       <td>{{art.sector}}</td>
